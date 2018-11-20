@@ -1,0 +1,23 @@
+details:
+- algorithm:
+    adapters:
+    - polya
+    aligner: hisat2
+    expression_caller:
+    - sailfish
+    strandedness: unstranded
+    transcript_assembler:
+    - sailfish
+    trim_reads: read_through
+  analysis: RNA-seq
+  description: example
+  files:
+  - example_R1.fastq.gz
+  - example_R2.fastq.gz
+  genome_build: hg38
+  metadata:
+    batch: batch1
+    phenotype: normal
+fc_name: normal_example
+upload:
+  dir: ../final
