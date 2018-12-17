@@ -14,7 +14,7 @@ $"="\n";
 
 my %opt;
 getopts ( "hq:v:s:d:g:A:V", \%opt );
-die "Usage: $0 -q quant.sf -v variants.vcf -s sample_name -d output_directory -g (hg38|mm10) -A -V" if $opt{h};
+die "Usage: $0 -q quant.sf -v variants.vcf -s sample_name -d output_directory -g (hg38|mm10) -A /path/to/genome/annotation.gtf -V" if $opt{h};
 
 print "genome: $opt{g}\n";
 die "You must provide a sample name.\n" unless $opt{s};
