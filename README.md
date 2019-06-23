@@ -32,6 +32,7 @@ Red Panda requires a number of files to run properly and they are listed below.
 
 ## Output
 A base output directory is created using the supplied argument (-d; in this case, the base directory is "data") in which multiple subdirectories and files are generated:
+
     ├── data
     │   ├── bed: a bed file for each cell, containing the location of all of the variant calls that need to be further validated with GATK-HC
     │   ├── quant: a quant.sf file created by salmon/sailfish containing all of the expressed genes in each cell
