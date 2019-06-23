@@ -50,7 +50,7 @@ For a given cell, once the VCF file in the "to_check" folder has been assessed b
 ## Software versions of 3rd party tools
 
 ### Samtools
-As of right now, Red Panda has only been confirmed to work with samtools versions 0.1.19–1.8. Version 1.9 (i.e., bcftools mpileup, the spiritual successor to samtools mpileup) likely works, but more testing is necessary.
+As of right now, Red Panda works with samtools versions 0.1.19–1.8. However, if you are using version 1.9 of samtools, then you must switch to the bcftools mpileup command as it is the spiritual successor to samtools mpileup.
 
 #### GATK HaplotypeCaller
 Feel free to use the most up-to-date version of GATK HaplotypeCaller on the variants generated in the "data/vcf/to_check" directory.
