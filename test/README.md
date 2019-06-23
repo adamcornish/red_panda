@@ -15,12 +15,16 @@ Annotation for the human genome (release v. 96) can be found here: ftp://ftp.ens
 
 Annotation for the mouse genome (release v. 96) can be found here: ftp://ftp.ensembl.org/pub/release-96/gtf/mus_musculus
 
-## Edit the variables to suit your environment
+## Edit the script to suit your environment
+
+### Variables
 At the top of the run_test.sh shell script, a number of variables have been included, two of which need to be changed to fit your environment:
 
     genome_fasta=/path/to/your/genome/fasta/file.fa
     annotation=/path/to/your/annotation/file.gtf
     
-## Run
+### Samools/Bcftools version
+As of right now, Red Panda has only been confirmed to work with samtools versions 0.1.19–1.8. Version 1.9 (i.e., bcftools mpileup, the spiritual successor to samtools mpileup) likely works, but more testing is necessary.
 
+## Run
 Once you have ensured that you have the genome and annotation, run the script "run_test.sh" to ensure everything is working.
