@@ -24,7 +24,7 @@ At the top of the run_test.sh shell script, a number of variables have been incl
     annotation=/path/to/your/annotation/file.gtf
     
 ### Samools/Bcftools version
-As of right now, Red Panda has only been confirmed to work with samtools versions 0.1.19–1.8. Version 1.9 (i.e., bcftools mpileup, the spiritual successor to samtools mpileup) likely works, but more testing is necessary.
+As of right now, Red Panda works with samtools versions 0.1.19–1.8. In version 1.9, mpileup was moved to the bcftools package, so depending on which version you have installed in your environment, you will need to uncomment the appropriate line of the shell script. If you have 1.8 or older installed, uncomment line 13, but if you have version 1.9 installed, uncomment line 15.
 
 ## Run
 Once you have ensured that you have the genome and annotation, run the script "run_test.sh" to ensure everything is working.
