@@ -1,4 +1,4 @@
-# Red Panda
+# Red Panda v. 0.1
 ### A tool for identifying variants in scRNA-seq
 #### author: Adam Cornish <adam.cornish@unmc.edu>
 #### license: MIT
